@@ -111,7 +111,26 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative">
+      {/* Bolt.new Badge */}
+      <div className="absolute top-4 right-4 z-20">
+        <a 
+          href="https://bolt.new/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block hover:opacity-80 transition-opacity"
+          title="Built with Bolt.new"
+        >
+          <img
+            src="/images/white_circle_360x360 .png"
+            alt="Built with Bolt.new"
+            width="48"
+            height="48"
+            className="w-12 h-12"
+          />
+        </a>
+      </div>
+
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -inset-10 opacity-50">
